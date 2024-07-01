@@ -27,12 +27,29 @@
 .App-link {
   color: #61dafb;
 }
+.title{
+  position: absolute;
+  font-size: 1.1em;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%,50%);
+  transition: all 1s ease;
+  text-shadow: 0 0 5px rgba(255,255,255,0.5),0 0 10px rgba(255,255,255,0.5), 0 0 15px rgba(255,255,255,0.5);
+}
+.top{
+  top: 0%;
+  left: 50%;
+  font-size: 1.5em;
+  animation: lightBlub 1s forwards;
+}
 
-@keyframes App-logo-spin {
+@keyframes lightBlub {
   from {
-    transform: rotate(0deg);
+    color: white;
+    text-shadow: 0 0 10px rgba(255,255,255,0.5),0 0 20px rgba(255,255,255,0.5), 0 0 30px rgba(255,255,255,0.5);
   }
   to {
-    transform: rotate(360deg);
+    color: #ffcc00;
+    text-shadow: none;
   }
 }
